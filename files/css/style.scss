@@ -1,0 +1,373 @@
+@import 'normalize';
+@import 'skeleton';
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+@import 'css/font-awesome-4.4.0/css/font-awesome.min.css';
+
+// VARIABLES
+
+$primary-colour: #000203;
+$secondary-colour: #2F4F4F;
+$logo-font: 'Sacramento', cursive;
+$heading-font: 'Raleway', Arial, sans-serif;
+$body-font: 'Droid Serif', serif;
+
+// TYPOGRAPHY
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font;
+	letter-spacing: 1px;
+}
+
+
+h2 {
+	border-bottom: solid 2px $primary-colour;
+	padding-bottom: 2.5rem;
+	margin-bottom: 2.5rem;
+	font-size: 3rem;
+	color: $secondary-colour;
+}	
+
+h3 {
+	font-size: 2.5rem;
+}
+
+h3, h4, h5, h6 {
+		text-transform: none;
+		color: $secondary-colour;
+	}
+
+p {
+	font-family: $body-font;
+	line-height: 2.3em;
+}
+
+a {
+	color: $secondary-colour;
+	text-decoration: none;
+}
+
+a p {
+	padding: 0 1rem 0 1rem;
+}
+
+// GENERAL
+
+main {
+flex: 1;
+padding-top: 5rem;
+
+}
+
+li {
+	display: inline-block;
+}
+
+.fa {
+	color: white;
+}
+
+.fa-stack {
+	max-height: 30px;
+	max-width: 30px;
+	vertical-align: top;
+}
+
+.fa-circle {
+	color: $primary-colour;
+}
+
+a:hover i.fa-circle {
+		color: $secondary-colour;
+		line-height: inherit;
+	}
+
+a:hover {
+	color: $primary-colour;
+}	
+
+.button, textarea, input.button-primary[type="submit"] {
+	border: solid 2px $secondary-colour;
+	font-weight: 400;
+	font-family: $heading-font;
+	height: auto;
+	padding: 0 1em;
+	text-transform: none;
+	border-radius: 0px;
+	letter-spacing: 0;
+	font-size: 1em;
+	background-color: #fff;
+	color: #000;
+}
+
+.button:hover {
+	border: solid 2px $primary-colour;
+}	
+
+input.button-primary[type="submit"] {
+	color: #fff;
+	background-color: $primary-colour;
+	border: none;
+}
+
+input.button-primary[type="submit"]:hover {
+	background-color: $secondary-colour;
+}
+
+label {
+	font-family: $heading-font;
+	font-weight: 400;
+}
+textarea:focus {
+	border: solid 2px $primary-colour;
+	background-color: #fff;
+	color: #000;
+}
+
+
+textarea {
+	padding: 1rem;
+}
+// HEADER
+
+header {
+	max-width: 100%;
+	height: 6rem;
+	clear: both;
+
+	a {
+		text-decoration: none;
+
+		h1 {
+		float: right;
+		font-size: 4.2rem;
+		line-height: 1.6;
+		font-family: $logo-font;
+		color: $primary-colour;
+
+		}
+	}
+}
+
+nav {
+	float: left;
+	line-height: 30px;
+	margin-top: 1em;
+
+	ul {
+		float: left;
+		margin-bottom: 2rem;
+	}
+
+	.nav-main li~li {
+		border-left: 2px solid $primary-colour;
+	}
+
+	.nav-main li {
+		padding: 0 1em 0 1em;
+	}
+
+	.social {
+		margin: 0 0 0 1em;
+
+		li {
+			line-height: 30px;
+		}
+	}
+
+	li {
+		height: 1.5em;
+		text-align: center;
+
+		a:hover {
+				color: $secondary-colour;
+			}
+
+		a {
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			line-height: 0;	
+			font-size: 1.5rem;
+		}
+	}
+}
+
+// FOOTER 
+
+footer {
+	text-align: center;
+	background: $primary-colour;
+	width: 100%;
+	padding: 5px;
+	margin-top: 3em;
+
+	p {
+		margin-bottom: 0px;
+		color: #fff;
+	}
+}
+
+// .push {
+// 	height: 4em;
+// }
+
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.image:hover {
+	opacity: 0.6;
+}
+
+
+section {
+	display: block;
+	height: auto;
+	position: relative;
+	clear: both;
+	margin-bottom: 10rem;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.aligner {
+	clear: both;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 4f0em;
+}
+
+.aligner-item {
+	flex: 0 0 auto;
+	height: 100%;
+}
+
+.gallery {
+	width: 100%;
+}
+
+// ABOUT 
+
+.contact li {
+	display: block;
+
+	a {
+		color: $primary-colour;
+	}
+
+	a:hover {
+		color: $secondary-colour;
+	}
+}
+
+.single-share li {
+	display: inline-block;
+	padding-right: 1em;
+}
+
+// BLOG
+
+
+.month {
+		display: block;
+		margin-left: 1em;
+	}
+
+.tag {
+	background: $primary-colour;
+	padding: 0.75rem;
+
+	a {
+		color: #fff;
+	}
+}	
+
+.tag:hover, input.button-primary[type="submit"]:hover {
+	background: $secondary-colour;
+}
+
+.post-list {
+	color: $secondary-colour;
+	margin-bottom: 10rem;
+}
+
+.post-list:hover h3, .post-list:hover p {
+	color: $primary-colour;
+}
+
+
+.button {
+	float: right;
+}
+
+.post {
+	padding-bottom: 5px;
+}
+
+.project {
+	width: 400px;
+}
+
+// SINGLE
+
+small {
+	color: $primary-colour;
+}
+
+.comment p~p {
+	margin-top: 2.5rem;
+}
+
+.comment p {
+	color: $secondary-colour;
+}
+
+
+.gallery {
+	font-size: 0;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	/*aligns panels to the center */
+	aligner-item: center;
+	justify-content: center;
+}
+.gallery > * {
+	flex: auto;
+	flex-grow: 0;
+	width: 250px;
+}
+
+/* makes gallery touch viewport sides if flex-grow is set as 1, so wider at bottom*/
+// .gallery > * img {
+// 	width: 100%;
+// 	height: auto;
+// }
+
+
+.image {
+	overflow: hidden;
+}
+
+.image img {
+	-moz-transition:-moz-transform 0.5s ease-in; 
+-webkit-transition:-webkit-transform 0.5s ease-in; 
+-o-transition:-o-transform 0.5s ease-in;
+}
+
+.image:hover img {
+	-moz-transform:scale(1.35); 
+-webkit-transform:scale(1.35);
+-o-transform:scale(1.35);
+}
