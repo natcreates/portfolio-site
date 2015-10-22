@@ -1354,7 +1354,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 4f0em;
+  max-height: 40em;
 }
 
 /* line 251, css/style.scss */
@@ -1365,7 +1365,7 @@ body {
 
 /* line 256, css/style.scss */
 .gallery {
-  width: 100%;
+  max-width: 100vw;
 }
 
 /* line 262, css/style.scss */

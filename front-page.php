@@ -119,7 +119,7 @@
           <img src="<?php echo get_template_directory_uri(); ?>/img/jennystarkscreenshot.png" alt="Jenny Stark website screenshot">
           <figcaption class="overlay">
           <div class="project-info">
-            <a href="<?php echo get_template_directory_uri(); ?>/files/index.html">
+            <a href="<?php echo get_template_directory_uri(); ?>/files/about.html">
             <h3>Jenny Stark: portfolio</h3>
               <p>Responsive design and build</p>
               <button>See prototype</button>
@@ -153,7 +153,6 @@
                 <li class="skill-tag">CSS3</li>
                 <li class="skill-tag">SASS</li>
                 <li class="skill-tag">WordPress</li>
-                <li class="skill-tag">Responsive</li>
               </ul>
             </a>
           </div>
@@ -195,59 +194,6 @@
     
 
     <div class="container">
-
-    <hr>
-
-      <section>
-      <h2>Process</h2>
-        <div class="row">
-          <div class="four columns">
-            <img src="" alt="">
-          </div>
-          <div class="eight columns">
-            <h3>Brief</h3>
-            <p></p>
-          </div>
-
-        </div>
-
-        <div class="row">
-        
-          <div class="four columns">
-            <h3>Wireframe</h3>
-            <p></p>
-          </div>
-          <div class="eight columns">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/wireframe_sample1.png" alt="Wireframe sample">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/wireframe_sample2.png" alt="Wireframe sample">
-          </div>
-
-        </div>
-
-        <div class="row">
-          <div class="eight columns">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/JennyStark_style_title.png" alt="Style-tile sample">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/JennyStark_style_tile2.png" alt="Style-tile sample">
-          </div>
-          <div class="four columns">
-            <h3>Design</h3>
-            <p>Style tiles are my preferred way of presenting the elements of a design -- fonts, colours, image effects, button-styles, etc -- and are informed by research. Depending on the complexity of the project, I either go straight to coding a workign prototype, or move into Photoshop to create a more comprehemsive visual design. </p>
-          </div>
-
-        </div>
-
-        <div class="row">
-          <div class="four columns">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/styletile.png" alt="Style-tile sample">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/styletile.png" alt="Style-tile sample">
-          </div>
-          <div class="eight columns">
-            <h3>Code</h3>
-            <p>Style tiles are my preferred way of presenting the elements of a design -- fonts, colours, image effects, button-styles, etc -- and are informed by research. Depending on the complexity of the project, I </p>
-          </div>
-
-        </div>
-      </section>
 
     <hr>
 

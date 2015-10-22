@@ -1,6 +1,7 @@
 
 
 <?php get_header(); ?>  
+<main role="main">
 <div class="container blog">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -32,7 +33,7 @@
     
 
   </div><!--end container-->
-  
+  </main>
             
 
 
