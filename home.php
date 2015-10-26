@@ -22,7 +22,7 @@
       <div class="blog-content eight columns">
         <h3 class="post-title"><?php the_title(); ?></h3>
   
-       <?php the_excerpt(); ?><div class="ellipsis"></div>
+       <?php the_excerpt(); ?>
 
       <small><?php the_time('F jS, Y'); ?> by Natalie Dixon</small>
       </div><!--end columns-->

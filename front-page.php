@@ -93,7 +93,7 @@
       <article class="six columns">
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/img/BarneysBubblehome.png" alt="Barney's Bubble website screenshot">
-          <figcaption class="overlay">
+          <figcaption class="mouse-tap-overlay">
           <div class="project-info">
             <a href="http://www.barneysbubble.com">
             <h3>Barney's Bubble</h3>
@@ -117,7 +117,7 @@
       <article class="six columns">
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/img/jennystarkscreenshot.png" alt="Jenny Stark website screenshot">
-          <figcaption class="overlay">
+          <figcaption class="mouse-tap-overlay">
           <div class="project-info">
             <a href="<?php echo get_template_directory_uri(); ?>/files/about.html">
             <h3>Jenny Stark: portfolio</h3>
@@ -142,7 +142,7 @@
       <article class="six columns">
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/img/mybossthemusescreenshot.png" alt="My Boss the Muse website screenshot">
-          <figcaption class="overlay">
+          <figcaption class="mouse-tap-overlay">
           <div class="project-info">
             <a href="http://www.mybossthemuse.com">
             <h3>My Boss the Muse</h3>
@@ -163,7 +163,7 @@
       <article class="six columns">
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/img/homescreenshot.png" alt="homepage screenshot">
-          <figcaption class="overlay">
+          <figcaption class="mouse-tap-overlay">
           <div class="project-info">
             <a href="http://www.nataliejdixon.com">
             <h3>Portfolio Site</h3>

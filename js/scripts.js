@@ -8,7 +8,7 @@ var main = function() {
             }
         });
         // handle the closing of the overlay
-        $(".overlay").click(function(e){
+        $(".mouse-tap-overlay").click(function(e){
             e.preventDefault();
             e.stopPropagation();
             if ($(this).hasClass("hover")) {
@@ -22,7 +22,7 @@ var main = function() {
             $(this).addClass("hover");
         })
         // handle the mouseleave functionality
-        $(".overlay").mouseleave(function(){
+        $(".mouse-tap-overlay").mouseleave(function(){
             $("figure").removeClass("hover");
         });
     }
