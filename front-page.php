@@ -17,7 +17,7 @@
     </div><!--end row-->
     <div class="row">
        <div class="twelve columns intro">
-          <p>I'm a London-based web designer, developer and writer. By day I work in a UX-driven, CSS-heavy and UI design-focussed role (I'm not currently seeking freelance work); other hours find me writing or drawing, usually to psytrance. I love people, design and CSS (and I'm starting to love JavaScript, too). 
+          <p>I'm a London-based web designer, developer and writer. By day I work in a UX-driven, CSS-heavy and UI design-focussed role. Other hours find me writing or drawing, usually to psytrance. I love people, design and CSS (and I'm starting to love JavaScript, too). 
 </p>
           <!--<p class="calltoaction">Let's give your ideas a voice and a platform. <a href="#contact">Hire me.</a></p>-->
         </div>
@@ -27,7 +27,7 @@
          <blockquote>As a small business we wanted a website that would be beautiful, easy-to-use and express who we were. Natalie made this happen for us. We are so happy!!<cite>--Amber Cassidy, <a href="http://www.barneysbubble.com">www.barneysbubble.com</a></cite></blockquote>
       </div>
       <div class="four columns">
-         <p class="download">See my experience.<a href="<?php echo get_template_directory_uri(); ?>/files/NatalieDixon_CV_2015WEB.pdf" target="_blank">Download my CV.</a></p>
+         <p class="download">See my experience.<a href="<?php echo get_template_directory_uri(); ?>/files/NatalieDixon_CV_2017WEB.pdf" target="_blank">Download my CV.</a></p>
       </div>
     </div>
 
@@ -89,6 +89,28 @@
     <section id="recent-projects">
     <a id="work"></a>
       <h2>Recent Projects</h2>
+
+      <div class="row"> 
+      <article class="six columns">
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/BarneysBubblehome.png" alt="Barney's Bubble website screenshot">
+          <figcaption class="mouse-tap-overlay">
+          <div class="project-info">
+            <a href="https://natcreates.github.io/vanilla-to-do/#">
+            <h3>Drag and Drop Eisenhower grid</h3>
+              <p>An experiment in vanilla JS</p>
+              <button>See live</button>
+              <ul>
+                <li class="skill-tag">HTML5</li>
+                <li class="skill-tag">JavaScript</li>
+                <li class="skill-tag">Responsive</li>
+              </ul>
+            </a>
+          </div>
+          </figcaption>
+        </figure>
+      </article>
+      </div>
 
       <div class="row"> 
       <article class="six columns">
