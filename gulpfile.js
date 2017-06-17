@@ -16,11 +16,11 @@ var plumberErrorHandler = { errorHandler: notify.onError({
 
 gulp.task('sass', function () {
  
-    gulp.src('sass/*.sass')
+    gulp.src('sass/style.scss')
 
     	.pipe(plumber(plumberErrorHandler))
  
-        .pipe(less())
+        .pipe(sass())
 
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) // Prefixer applied after Sass
  

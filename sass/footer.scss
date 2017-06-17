@@ -1,0 +1,85 @@
+//FOOTER====
+
+@import "variables.scss";
+
+footer {
+	clear: both;
+	text-align: center;
+	background: $dark-grey;
+	bottom: 0px;
+	width: 100%;
+	padding: 0.5% 1% 1%;
+	border-top: 5px solid $light-blue;
+	height: 2rem;
+	position: fixed;
+	z-index: 20;
+
+
+	@media (max-width: 360px)
+		{
+			height: auto;
+		}	
+
+	p {
+		font-size: 0.75em;
+		padding: 1%;
+		line-height: 1em;
+		margin: 0 auto;
+		color: white;
+		display: inline-block;
+		text-transform: uppercase;
+
+		@media (max-width: 800px) {
+			display: none;
+		}
+	}
+}
+
+p.two {
+
+	max-height: 35px;
+	max-width: 35px;
+
+	@media (max-width: 800px) {
+			position: absolute;
+			display: block;
+			bottom: 1%;
+
+		}
+}
+
+.social-media, .contact {
+
+	display: inline-block;
+
+	a:hover i.fa-circle {
+		color: $grey;
+	}
+	
+	.fa-stack {
+			max-height: 35px;
+			max-width: 35px;
+	}
+}
+
+.contact {
+	text-align: left;
+	display: inline-block;
+	float: left;
+
+	@media (max-width: 800px) {
+		text-align: center;
+		p {
+			display: none;
+		}
+	}
+}
+
+.social-media {
+	text-align: right;
+	float: right;
+
+	@media (max-width: 800px) {
+	text-align: center;
+	}
+}
