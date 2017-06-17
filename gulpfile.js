@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var less = require('gulp-less'); // Compile LESS
+var sass = require('gulp-sass'); // Compile SASS
 var plumber = require('gulp-plumber'); // Error handling
 var notify = require('gulp-notify'); // Error messages
 var autoprefixer = require('gulp-autoprefixer'); // Vendor prefixes
@@ -14,9 +14,9 @@ var plumberErrorHandler = { errorHandler: notify.onError({
  
 };
 
-gulp.task('less', function () {
+gulp.task('sass', function () {
  
-    gulp.src('css/*.less')
+    gulp.src('sass/*.sass')
 
     	.pipe(plumber(plumberErrorHandler))
  
@@ -46,7 +46,7 @@ gulp.task('less', function () {
  
 // });
 
-gulp.task('default', ['less']); // Default Gulp tasks
+gulp.task('default', ['sass']); // Default Gulp tasks
 
 
 

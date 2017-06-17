@@ -1,0 +1,87 @@
+// HEADER===
+@import "variables.less";
+
+header {
+	position: fixed;
+	width: 100%;
+	background: @dark-grey;
+	border-bottom: 5px solid @light-blue;
+	z-index: 20;
+	@media (max-width: 360px) {
+			height: 4rem;
+		}
+
+		@media (min-width: 360px) {
+			height: 5rem;
+		}
+
+	h1 {
+
+		float: left;
+		color: white;
+
+		span {
+			display: none;
+		}
+
+		@media (max-width: 500px) {
+			font-size: 1.3em;
+		}
+
+		@media (min-width: 800px) {
+			font-size: 1.75em;
+
+			span {
+				display: inline;
+			}
+		}
+	}	
+
+	h2 {
+		color: @light-blue;
+	}
+
+	nav {
+
+		/* unvisited link */
+		a:link {
+		    color: white;
+		}
+
+		/* mouse over link */
+		a:hover {
+		    color: @light-blue;
+		}
+
+		/* selected link */
+		a:active {
+		    color: white;
+		}
+
+		div.menu {
+			margin: 2px 0;
+			float: right;
+
+				li {
+					display: inline-block;
+					margin-bottom: 0;
+
+					@media (max-width: 800px)
+					{
+						display: none;
+					}		
+
+					a {
+						text-decoration: none;
+						font-family: 'League Gothic', sans-serif;
+						font-size: 1.75em;
+						line-height: 1.75em;
+						text-transform: uppercase;
+						padding: 0 0 0 1em;
+					}
+
+
+				}
+		} // end menu
+	}
+}
