@@ -19,7 +19,7 @@
       </a>
     </div><!--end contact-->
 
-    <p class="">&copy; Natalie Dixon 2015</p>
+    <p class="">&copy; Natalie Dixon 2017</p>
 
     <div class="social-media five columns">
       <p class="feeling-social">Feeling social?</p>

@@ -128,12 +128,12 @@ h2 {
 }
 
 h3 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 	color: @grey;
 }	
 
-p {
-	font-size: 1em;
+p, li {
+	font-size: 1.1em;
 }
 
 blockquote {
@@ -149,6 +149,10 @@ blockquote {
 			color: @light-blue;
 		}
 	}
+}
+
+small {
+	font-size: 90%;
 }
 
 /*------------------------------------*\
@@ -469,13 +473,18 @@ a:hover i.fa-circle {
 .moretag {
 	color: white;
 	background: @dark-grey;
-	text-transform: uppercase;
-	padding: 5px;
-	border-radius: 5px;
+	padding: 5px 10px;
+	border-radius: 20px;
 	display: block;
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	transition: all 0.2s ease-in;
+}
+
+.moretag:hover {
+	background: @dark-blue;
+	color: white;
 }
 
 .blog-content p:after {
@@ -485,6 +494,11 @@ a:hover i.fa-circle {
 	font-size: inherit;
 	font-family: inherit;
 }
+
+.blog > .row:last-child {
+	margin-bottom: 5%;
+}
+
 .post-thumb {
 	max-width: 200px;
 	max-height: 200px;
@@ -495,7 +509,7 @@ a:hover i.fa-circle {
 }
 
 .post-title {
-	border-bottom: solid 3px @dark-grey;
+	border-bottom: solid 2px @grey;
 	margin-top: 0;
 	padding-bottom: 5px;
 	color: @grey;

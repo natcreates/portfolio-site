@@ -17,8 +17,9 @@
     </div><!--end row-->
     <div class="row">
        <div class="twelve columns intro">
-          <p>I'm a London-based web designer, developer and writer. I see projects in the context of larger content strategies—leading to sharp, targeted sites that provide clear calls-to-action. I craft code, but don't talk in it! </p>
-          <p class="calltoaction">Let's give your ideas a voice and a platform. <a href="#contact">Hire me.</a></p>
+          <p>I'm a London-based web designer, developer and writer. By day I work in a UX-driven, CSS-heavy and UI design-focussed role (I'm not currently seeking freelance work); other hours find me writing or drawing, usually to psytrance. I love people, design and CSS (and I'm starting to love JavaScript, too). 
+</p>
+          <!--<p class="calltoaction">Let's give your ideas a voice and a platform. <a href="#contact">Hire me.</a></p>-->
         </div>
     </div><!--end row-->
     <div class="row">
@@ -26,7 +27,7 @@
          <blockquote>As a small business we wanted a website that would be beautiful, easy-to-use and express who we were. Natalie made this happen for us. We are so happy!!<cite>--Amber Cassidy, <a href="http://www.barneysbubble.com">www.barneysbubble.com</a></cite></blockquote>
       </div>
       <div class="four columns">
-         <p class="download">In a rush? I get it. <a href="<?php echo get_template_directory_uri(); ?>/files/NatalieDixon_CV_2015WEB.pdf" target="_blank">Download my CV.</a></p>
+         <p class="download">See my experience.<a href="<?php echo get_template_directory_uri(); ?>/files/NatalieDixon_CV_2015WEB.pdf" target="_blank">Download my CV.</a></p>
       </div>
     </div>
 
