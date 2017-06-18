@@ -33,15 +33,17 @@
 
   <!-- HEADER
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header>
+<header class="nd-site-header">
   <div class="container">
     <div class="row">
-        <div class="tag six columns">
-            <h1><a href="<?php bloginfo('url'); ?>">Natalie Dixon <span>| Designer & Developer</span></a></h1>
+        <div class="six columns">
+            <h1 class="nd-site-header__title">
+              <a href="<?php bloginfo('url'); ?>">Natalie Dixon <span class="nd-site-header__title-tag">| Designer & Developer</span></a>
+            </h1>
         </div><!--end column-->
 
-        <nav class="six columns">
-           
+        <nav class="six columns nd-site-header__nav">
+          <div class="nd-site-header__mobile-icon"></div>
           <?php wp_nav_menu( array('theme_location' => 'header-menu', 'container_class' => 'menu' ) ); ?>
            
         </nav>

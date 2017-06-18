@@ -37,9 +37,16 @@ var main = function() {
 
 }
 
+var mobile = function() {
+    $(".nd-site-header__nav-icon").click(function(e){
+        $(".menu").toggleClass("menu--mobile");
+        $(this).toggleClass(".close");
+    }
+}
+
 $ (document).ready(function(){
-	// $('.pull').click(onClick); // passing the function onClick. onClick() would be calling and passing return value
 	main();
+    mobile();
 });
 
 $(window).resize(main);

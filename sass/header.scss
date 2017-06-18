@@ -1,87 +1,139 @@
 // HEADER===
-@import "variables.scss";
+@import "__variables";
 
-header {
+.nd-site-header {
 	position: fixed;
 	width: 100%;
 	background: $dark-grey;
 	border-bottom: 5px solid $light-blue;
 	z-index: 20;
+	
 	@media (max-width: 360px) {
-			height: 4rem;
-		}
+		height: 4rem;
+	}
 
-		@media (min-width: 360px) {
-			height: 5rem;
-		}
+	@media (min-width: 360px) {
+		height: 5rem;
+	}
+}
 
-	h1 {
-
-		float: left;
+.nd-site-header__nav {
+	/* unvisited link */
+	a:link {
 		color: white;
+	}
 
-		span {
-			display: none;
-		}
-
-		@media (max-width: 500px) {
-			font-size: 1.3em;
-		}
-
-		@media (min-width: 800px) {
-			font-size: 1.75em;
-
-			span {
-				display: inline;
-			}
-		}
-	}	
-
-	h2 {
+	/* mouse over link */
+	a:hover {
 		color: $light-blue;
 	}
 
-	nav {
+	/* selected link */
+	a:active {
+		color: white;
+	}
+}
 
-		/* unvisited link */
-		a:link {
-		    color: white;
+
+.nd-site-header__title {
+	float: left;
+	color: white;
+
+	@media (max-width: 500px) {
+		font-size: 1.3em;
+	}
+
+	@media (min-width: 800px) {
+		font-size: 1.75em;
+	}
+}
+
+.nd-site-header__title-tag {
+
+	@media (max-width: 800px) {
+		// hide from mobile/tablet
+		display: none;
+	}
+}
+
+
+.nd-site-header__nav-icon {
+	// hide from desktop view
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	background-image:url(../img/nav.svg); 
+	background-repeat: no-repeat; 
+	background-position: center center;
+	background-color: $dark-grey;
+	height:40px;
+	width:40px;
+
+	&.close {
+		background-image: url(../img/nav.svg);
+	}
+
+	@media (max-width: 800px)
+	{
+		// show to mobile/tablet
+		display: block;
+	}
+}
+
+div.menu {
+	margin: 2px 0;
+	float: right;
+
+	ul {
+		list-style: none;
+	}
+
+	@media (max-width: 800px)
+	{
+		// hide from tablet/mobile view
+		visibility: hidden;
+		width: 0;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $grey;
+		transition: width 0.1s ease;
+
+		&.menu--mobile {
+			width: 30%;
+			visibility: visible;
 		}
+	}
+}
 
-		/* mouse over link */
-		a:hover {
-		    color: $light-blue;
+.page-item {
+	display: inline-block;
+	margin-bottom: 0;
+
+	@media (max-width: 800px)
+	{
+		display: block;
+
+		&:hover {
+			background-color: $dark-grey;
 		}
+	}		
 
-		/* selected link */
-		a:active {
-		    color: white;
+	a {
+		text-decoration: none;
+		font-family: 'League Gothic', sans-serif;
+		font-size: 1.75em;
+		line-height: 1.75em;
+		text-transform: uppercase;
+		padding: 0 0 0 1em;
+
+		@media (max-width: 800px)
+		{
+			display: block;
+			padding: 0;
 		}
-
-		div.menu {
-			margin: 2px 0;
-			float: right;
-
-				li {
-					display: inline-block;
-					margin-bottom: 0;
-
-					@media (max-width: 800px)
-					{
-						display: none;
-					}		
-
-					a {
-						text-decoration: none;
-						font-family: 'League Gothic', sans-serif;
-						font-size: 1.75em;
-						line-height: 1.75em;
-						text-transform: uppercase;
-						padding: 0 0 0 1em;
-					}
-
-
-				}
-		} // end menu
 	}
 }
