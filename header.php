@@ -14,7 +14,6 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -43,7 +42,7 @@
         </div><!--end column-->
 
         <nav class="six columns nd-site-header__nav">
-          <div class="nd-site-header__mobile-icon"></div>
+          <div class="nd-site-header__nav-icon"></div>
           <?php wp_nav_menu( array('theme_location' => 'header-menu', 'container_class' => 'menu' ) ); ?>
            
         </nav>
