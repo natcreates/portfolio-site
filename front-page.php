@@ -86,29 +86,7 @@
 
     <section id="recent-projects">
     <a id="work"></a>
-      <h2>Recent Projects</h2>
-
-      <div class="row"> 
-      <article class="six columns">
-        <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/Eisenhowergrid.png" alt="Eisenhower grid to-do app">
-          <figcaption class="mouse-tap-overlay">
-          <div class="project-info">
-            <a href="https://natcreates.github.io/vanilla-to-do/#">
-            <h3>Drag and Drop Eisenhower grid</h3>
-              <p>An experiment in vanilla JS</p>
-              <button>See live</button>
-              <ul>
-                <li class="skill-tag">HTML5</li>
-                <li class="skill-tag">JavaScript</li>
-                <li class="skill-tag">Responsive</li>
-              </ul>
-            </a>
-          </div>
-          </figcaption>
-        </figure>
-      </article>
-      </div>
+      <h2>Projects</h2>
 
       <div class="row"> 
       <article class="six columns">
@@ -134,7 +112,28 @@
           </figcaption>
         </figure>
       </article>
+      <article class="six columns">
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/Eisenhowergrid.png" alt="Eisenhower grid to-do app">
+          <figcaption class="mouse-tap-overlay">
+          <div class="project-info">
+            <a href="https://natcreates.github.io/vanilla-to-do/#">
+            <h3>Drag and Drop Eisenhower grid</h3>
+              <p>An experiment in vanilla JS</p>
+              <button>See live</button>
+              <ul>
+                <li class="skill-tag">HTML5</li>
+                <li class="skill-tag">JavaScript</li>
+                <li class="skill-tag">Responsive</li>
+              </ul>
+            </a>
+          </div>
+          </figcaption>
+        </figure>
+      </article>
+      </div>
 
+    <div class="row"> 
       <article class="six columns">
         <figure>
           <img src="<?php echo get_template_directory_uri(); ?>/img/jennystarkscreenshot.png" alt="Jenny Stark website screenshot">
@@ -150,30 +149,6 @@
                 <li class="skill-tag">SASS</li>
                 <li class="skill-tag">Design</li>
                 <li class="skill-tag">Responsive</li>
-              </ul>
-            </a>
-          </div>
-          </figcaption>
-        </figure>
-      </article>
-
-      </div>
-
-    <div class="row"> 
-      <article class="six columns">
-        <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/mybossthemusescreenshot.png" alt="My Boss the Muse website screenshot">
-          <figcaption class="mouse-tap-overlay">
-          <div class="project-info">
-            <a href="http://www.mybossthemuse.com">
-            <h3>My Boss the Muse</h3>
-              <p>PSD to WordPress blog</p>
-              <button>See live</button>
-              <ul>
-                <li class="skill-tag">PSD to HTML5</li>
-                <li class="skill-tag">CSS3</li>
-                <li class="skill-tag">SASS</li>
-                <li class="skill-tag">WordPress</li>
               </ul>
             </a>
           </div>
