@@ -1408,7 +1408,12 @@ footer.nd-site-footer {
 .nd-site-footer__link:hover i.fa-circle {
   color: #6C6464; }
 
-.nd-site-footer__detail {
+.nd-site-footer__copyright {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.nd-site-footer__detail, .nd-site-footer__copyright {
   font-size: 0.75em;
   padding: 5px;
   margin: 0 auto;
@@ -1416,5 +1421,5 @@ footer.nd-site-footer {
   display: inline-block;
   text-transform: uppercase; }
   @media (max-width: 860px) {
-    .nd-site-footer__detail {
+    .nd-site-footer__detail, .nd-site-footer__copyright {
       display: none; } }

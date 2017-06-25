@@ -44,7 +44,13 @@ footer.nd-site-footer {
 	}
 }
 
-.nd-site-footer__detail  {
+.nd-site-footer__copyright {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+} 
+
+.nd-site-footer__detail, .nd-site-footer__copyright   {
 	font-size: 0.75em;
 	padding: 5px;
 	margin: 0 auto;

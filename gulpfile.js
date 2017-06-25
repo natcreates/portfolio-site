@@ -3,6 +3,10 @@ var sass = require('gulp-sass'); // Compile SASS
 var plumber = require('gulp-plumber'); // Error handling
 var notify = require('gulp-notify'); // Error messages
 var autoprefixer = require('gulp-autoprefixer'); // Vendor prefixes
+var rename = require('gulp-rename'); 
+var uglify = require('gulp-uglify'); 
+
+var concat = require('gulp-concat'); 
 
 var plumberErrorHandler = { errorHandler: notify.onError({
  
@@ -28,6 +32,15 @@ gulp.task('sass', function () {
  
 });
 
+gulp.task('scripts', function() {
+	return gulp.src('js/*.js')
+		.pipe(concat('scripts.js'))
+		.pipe(gulp.dest('js'))
+		.pipe(rename('scripts.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('js'));
+});
+
 // gulp.task('img', function() {
  
 //   gulp.src('img/src/*.{png,jpg,gif}')
@@ -46,7 +59,7 @@ gulp.task('sass', function () {
  
 // });
 
-gulp.task('default', ['sass']); // Default Gulp tasks
+gulp.task('default', ['sass', 'scripts']); // Default Gulp tasks
 
 
 

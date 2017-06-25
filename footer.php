@@ -1,7 +1,7 @@
  <footer class="nd-site-footer">
 	<div class="container">
 	 <div class="row">
-    <div class="nd-site-footer__contact five columns">
+    <div class="nd-site-footer__contact six columns">
       <a class="nd-site-footer__link" href="tel:00447548282074">
         <span class="fa-stack fa-1x">
             <i class="fa fa-circle fa-stack-2x"></i>
@@ -19,9 +19,9 @@
       </a>
     </div><!--end contact-->
 
-    <small class="nd-site-footer__detail two columns">&copy; Natalie Dixon 2017</small>
+    <small class="nd-site-footer__copyright">&copy; Natalie Dixon 2017</small>
 
-    <div class="nd-site-footer__social five columns">
+    <div class="nd-site-footer__social six columns">
       <p class="nd-site-footer__detail">Feeling social?</p>
       <a class="nd-site-footer__link" href="https://twitter.com/natcreates">
         <span class="fa-stack fa-1x">
