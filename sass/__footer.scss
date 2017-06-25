@@ -2,84 +2,57 @@
 
 @import "__variables";
 
-footer {
+footer.nd-site-footer {
 	clear: both;
 	text-align: center;
 	background: $dark-grey;
-	bottom: 0px;
+	bottom: 0;
 	width: 100%;
-	padding: 0.5% 1% 1%;
+	padding: 4px 10px;
 	border-top: 5px solid $light-blue;
-	height: 2rem;
 	position: fixed;
-	z-index: 20;
-
-
-	@media (max-width: 360px)
-		{
-			height: auto;
-		}	
-
-	p {
-		font-size: 0.75em;
-		padding: 1%;
-		line-height: 1em;
-		margin: 0 auto;
-		color: white;
-		display: inline-block;
-		text-transform: uppercase;
-
-		@media (max-width: 800px) {
-			display: none;
-		}
-	}
+	z-index: 4;
+	max-height: 45px;
 }
 
-p.two {
-
-	max-height: 35px;
-	max-width: 35px;
-
-	@media (max-width: 800px) {
-			position: absolute;
-			display: block;
-			bottom: 1%;
-
-		}
-}
-
-.social-media, .contact {
-
+.nd-site-footer__social, .nd-site-footer__contact {
 	display: inline-block;
-
-	a:hover i.fa-circle {
-		color: $grey;
-	}
-	
-	.fa-stack {
-			max-height: 35px;
-			max-width: 35px;
-	}
 }
 
-.contact {
+.nd-site-footer__contact {
 	text-align: left;
-	display: inline-block;
 	float: left;
+	display: inline-block;
 
-	@media (max-width: 800px) {
+	@media (max-width: map-get($breakpoints, large)) {
 		text-align: center;
-		p {
-			display: none;
-		}
 	}
 }
 
-.social-media {
+.nd-site-footer__social {
 	text-align: right;
 	float: right;
 
-	@media (max-width: 800px) {
-	text-align: center;
+	@media (max-width: map-get($breakpoints, large)) {
+		text-align: center;
+	}
+}
+
+.nd-site-footer__link {
+	&:hover i.fa-circle {
+		color: $grey;
+	}
+}
+
+.nd-site-footer__detail  {
+	font-size: 0.75em;
+	padding: 5px;
+	margin: 0 auto;
+	color: white;
+	display: inline-block;
+	text-transform: uppercase;
+
+	@media (max-width: map-get($breakpoints, large)) {
+		display: none;
 	}
 }

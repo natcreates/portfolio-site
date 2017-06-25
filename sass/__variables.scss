@@ -3,3 +3,13 @@ $dark-blue: #006fa7;
 $active: #FF9E26;
 $grey: #6C6464; 
 $dark-grey: #272123;
+
+$header-height: 50px;
+
+$breakpoints: (
+	default: null,
+	large: 860px,
+	tablet-large: 750px,
+	tablet-small: 550px,
+	phone: 360px,
+);

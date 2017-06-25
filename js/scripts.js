@@ -1,26 +1,29 @@
-
-var WebFont = require('webfontloader');
-
-var mobile = function() {
-    $(".nd-site-header__nav-icon").click(function(e){
-        $(".menu").toggleClass("menu--mobile");
-        $(this).toggleClass(".close");
+var mobileMenu = function() {
+    
+    $(document).on("click", ".nd-site-header__nav-trigger", function(){
+        $(".menu").toggleClass("nav--mobile");
+        $(this).toggleClass("close");
     })
-}
 
-var fontLoader = function() {
-    WebFont.load({
-        google: {
-          families: ['Yellowtail', 'Source Sans Pro:400,600']
-        }
-
-        custom: {
-            families: ['League Gothic']
-        }
-    });
+    if($(".nd-site-header__nav-trigger").hasClass("close")) {
+        $(document).on("click", "body", function() {
+            $(this).trigger("click");
+        })
+    }
 }
 
 var main = function() {
+    //WebFont.load({
+    //    google: {
+    //      families: ['Yellowtail', 'Source Sans Pro:400,600']
+     //   }
+
+     //   custom: {
+     //       families: ['League Gothic']
+     //   }
+    //});
+
+    var viewport = $(window).width();
 
 	if (Modernizr.touch) {
         // handle the adding of hover class when clicked
@@ -49,21 +52,21 @@ var main = function() {
         });
     }
 
-    var viewport = $(window).width();
-    console.log(viewport);
 
-    if (viewport < 800) {
-		$('.social-media').removeClass("five columns"); // change the Skeleton class
-		$('.contact').removeClass("five columns");
+    if (viewport < 750) {
+		$('.nd-site-footer__social').removeClass("five columns"); // change the Skeleton class
+		$('.nd-site-footer__contact').removeClass("five columns");
+        $('.nd-site-footer__detail').removeClass("two columns");
 	}
-
-    mobile();
-    fontLoader();
 
 }
 
-$ (document).ready(function(){
+$(document).ready(function(){
 	main();
+    mobileMenu();
 });
 
-$(window).resize(main);
+$(window).resize(function() {
+    main();
+    mobileMenu()
+});

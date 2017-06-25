@@ -19,10 +19,10 @@
 </div><!--end four columns-->
 <div class="blog-content-full eight columns">
   <h3 class="post-title"><?php the_title(); ?></h3>
-
+  <small><?php the_time('F jS, Y'); ?> by Natalie Dixon</small>
   <?php the_content(); ?>
 
-      <small><?php the_time('F jS, Y'); ?> by Natalie Dixon</small>
+      
   </div>
   </div><!--end row-->
    <?php endwhile; else : ?>

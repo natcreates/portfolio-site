@@ -1,29 +1,29 @@
- <footer>
+ <footer class="nd-site-footer">
 	<div class="container">
 	 <div class="row">
-    <div class="contact five columns">
-      <a href="tel:00447548282074">
+    <div class="nd-site-footer__contact five columns">
+      <a class="nd-site-footer__link" href="tel:00447548282074">
         <span class="fa-stack fa-1x">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-phone fa-stack-1x"></i>
         </span>
-        <p>+447548282074</p>
+        <span class="nd-site-footer__detail">+447548282074</span>
       </a>
         
-      <a href="mailto:natalie@nataliejdixon.com">
+      <a class="nd-site-footer__link" href="mailto:natalie@nataliejdixon.com">
         <span class="fa-stack fa-1x">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-envelope fa-stack-1x"></i>
         </span>
-        <p>natalie@nataliejdixon.com</p>
+        <span class="nd-site-footer__detail">natalie@nataliejdixon.com</span>
       </a>
     </div><!--end contact-->
 
-    <p class="">&copy; Natalie Dixon 2017</p>
+    <small class="nd-site-footer__detail two columns">&copy; Natalie Dixon 2017</small>
 
-    <div class="social-media five columns">
-      <p class="feeling-social">Feeling social?</p>
-      <a href="https://twitter.com/natcreates">
+    <div class="nd-site-footer__social five columns">
+      <p class="nd-site-footer__detail">Feeling social?</p>
+      <a class="nd-site-footer__link" href="https://twitter.com/natcreates">
         <span class="fa-stack fa-1x">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-twitter fa-stack-1x"></i>

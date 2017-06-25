@@ -42,7 +42,9 @@
         </div><!--end column-->
 
         <nav class="six columns nd-site-header__nav">
-          <div class="nd-site-header__nav-icon"></div>
+          <button class="nd-site-header__nav-trigger">
+            <i class="nd-site-header__nav-icon"></i>
+          </button>
           <?php wp_nav_menu( array('theme_location' => 'header-menu', 'container_class' => 'menu' ) ); ?>
            
         </nav>

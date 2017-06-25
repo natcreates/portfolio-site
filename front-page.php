@@ -10,16 +10,14 @@
            <div class="headline">
             <h2>Natalie Dixon</h2>
             <h1><span class="designer">Web Designer</span> <br>& FRONT-END DEVELOPER</h1>
-            <h3 class="strapline">Crafts code, doesn't talk in it.</h3>
           </div>
         </div>
       </section>
     </div><!--end row-->
     <div class="row">
        <div class="twelve columns intro">
-          <p>I'm a London-based web designer, developer and writer. By day I work in a UX-driven, CSS-heavy and UI design-focussed role. Other hours find me writing or drawing, usually to psytrance. I love people, design and CSS (and I'm starting to love JavaScript, too). 
+          <p>I'm a London-based web designer, developer and writer. By day I work on the UI of a complex web application in a role that's both UX-driven and CSS-heavy. Other hours find me writing or drawing, usually to psytrance. I love people, design and CSS (and I'm starting to love JavaScript, too). 
 </p>
-          <!--<p class="calltoaction">Let's give your ideas a voice and a platform. <a href="#contact">Hire me.</a></p>-->
         </div>
     </div><!--end row-->
     <div class="row">
@@ -93,7 +91,7 @@
       <div class="row"> 
       <article class="six columns">
         <figure>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/BarneysBubblehome.png" alt="Barney's Bubble website screenshot">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/Eisenhowergrid.png" alt="Eisenhower grid to-do app">
           <figcaption class="mouse-tap-overlay">
           <div class="project-info">
             <a href="https://natcreates.github.io/vanilla-to-do/#">
