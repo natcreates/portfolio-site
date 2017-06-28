@@ -62,3 +62,9 @@ footer.nd-site-footer {
 		display: none;
 	}
 }
+
+.nd-site-footer__copyright {
+	@media (max-width: 950px) {
+		display: none;
+	}
+}

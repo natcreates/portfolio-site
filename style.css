@@ -1091,6 +1091,9 @@ a:hover i.fa-circle {
   margin: 0 5px;
   line-height: 70px;
   position: relative; }
+  @media (max-width: 750px) {
+    .skill {
+      display: none; } }
 
 /*------------------------------------
 * SECTION - RECENT PROJECTS
@@ -1100,7 +1103,8 @@ a:hover i.fa-circle {
   background: #272123;
   padding: 0.75em;
   color: #fff;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  margin: 0.1em; }
 
 #recent-projects figure {
   position: relative;
@@ -1126,26 +1130,48 @@ a:hover i.fa-circle {
   width: 100%;
   height: 0; }
   .mouse-tap-overlay .project-info {
-    padding: 1rem 0px; }
+    padding: 1rem 0px;
+    height: 100%; }
     .mouse-tap-overlay .project-info h3 {
-      font-size: 2em; }
-  .mouse-tap-overlay button {
+      font-size: 1.5em; }
+  .mouse-tap-overlay .link-desc {
     background: #fff;
     padding: 0px;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     color: #272123;
     border: none;
     border-radius: 0px;
     display: block;
     font-size: 1.3em;
-    transition: all 0.5s; }
-  .mouse-tap-overlay button:hover {
+    transition: all 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-family: 'League Gothic', sans-serif;
+    width: 150px;
+    font-weight: 600;
+    line-height: 38px;
+    height: 38px;
+    white-space: nowrap;
+    display: inline-block; }
+  .mouse-tap-overlay .link-desc:hover {
     background: #272123;
     color: #fff; }
   .mouse-tap-overlay h3, .mouse-tap-overlay p, .mouse-tap-overlay a {
     color: inherit; }
-  .mouse-tap-overlay ul {
-    margin: 2em auto; }
+
+.nd-site-project__skill-list {
+  margin: 2em auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media (max-width: 750px) {
+    .nd-site-project__skill-list {
+      display: none; } }
 
 #recent-projects figure:hover .mouse-tap-overlay {
   height: 100%; }
@@ -1189,6 +1215,7 @@ a:hover i.fa-circle {
   margin-bottom: 5%; }
 
 .post-thumb {
+  width: 100%;
   max-width: 200px;
   max-height: 200px;
   position: relative;
@@ -1276,7 +1303,7 @@ h1.nd-site-header__title {
   top: 5px;
   right: 0;
   height: 40px;
-  width: 40px;
+  width: 0;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
@@ -1285,7 +1312,8 @@ h1.nd-site-header__title {
   @media (max-width: 750px) {
     .nd-site-header__nav-trigger {
       height: 1.3em;
-      margin: 5px 0; } }
+      margin: 5px 0;
+      width: 40px; } }
   .nd-site-header__nav-trigger:hover {
     background-color: #272123; }
   @media (max-width: 750px) {
@@ -1423,3 +1451,7 @@ footer.nd-site-footer {
   @media (max-width: 860px) {
     .nd-site-footer__detail, .nd-site-footer__copyright {
       display: none; } }
+
+@media (max-width: 950px) {
+  .nd-site-footer__copyright {
+    display: none; } }

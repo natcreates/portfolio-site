@@ -331,6 +331,10 @@ a:hover i.fa-circle {
 	line-height: 70px;
 	position: relative;
 
+	@media (max-width: map-get($breakpoints, tablet-large)) {
+		display: none;
+	}
+
 }
 
  /*------------------------------------
@@ -344,6 +348,7 @@ a:hover i.fa-circle {
 	padding: 0.75em;
 	color: #fff;
 	font-size: 0.8em;
+	margin: 0.1em;
 
 }
 
@@ -378,25 +383,35 @@ a:hover i.fa-circle {
 
 	.project-info {
 		padding: 1rem 0px;
+		height: 100%;
 
 		h3 {
-			font-size: 2em;
+			font-size: 1.5em;
 		}
 	}
 
-	button {
+	.link-desc {
 		background: #fff;
 		padding: 0px;
-		margin: 1rem auto;
-		color: $dark-grey;
+		margin: 0.5rem auto;
+		color: #272123;
 		border: none;
 		border-radius: 0px;
 		display: block;
 		font-size: 1.3em;
 		transition: all 0.5s;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+		font-family: 'League Gothic', sans-serif;
+		width: 150px;
+		font-weight: 600;
+		line-height: 38px;
+		height: 38px;
+		white-space: nowrap;
+		display: inline-block;
 	}
 
-	button:hover {
+	.link-desc:hover {
 		background: $dark-grey;
 		color: #fff;
 	}
@@ -405,8 +420,17 @@ a:hover i.fa-circle {
 		color: inherit;
 	}
 
-	ul {
-		margin: 2em auto;
+}
+
+.nd-site-project__skill-list {
+	margin: 2em auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+	@media (max-width: map-get($breakpoints, tablet-large)) {
+		display: none;
 	}
 }
 
@@ -460,6 +484,7 @@ a:hover i.fa-circle {
 }
 
 .post-thumb {
+	width: 100%;
 	max-width: 200px;
 	max-height: 200px;
 	position: relative;

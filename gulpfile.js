@@ -9,54 +9,54 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat'); 
 
 var plumberErrorHandler = { errorHandler: notify.onError({
- 
-    title: 'Gulp',
- 
-    message: 'Error: <%= error.message %>'
- 
-  })
- 
+	
+	title: 'Gulp',
+	
+	message: 'Error: <%= error.message %>'
+	
+})
+
 };
 
 gulp.task('sass', function () {
- 
-    gulp.src('sass/style.scss')
+	
+	gulp.src('sass/style.scss')
 
-    	.pipe(plumber(plumberErrorHandler))
- 
-        .pipe(sass())
+	.pipe(plumber(plumberErrorHandler))
+	
+	.pipe(sass())
 
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4')) // Prefixer applied after Sass
- 
+        
         .pipe(gulp.dest('.'))
- 
-});
+        
+    });
 
 gulp.task('scripts', function() {
-	return gulp.src('js/*.js')
-		.pipe(concat('scripts.js'))
-		.pipe(gulp.dest('js'))
-		.pipe(rename('scripts.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('js'));
+	return gulp.src('js/src/*.js')
+	.pipe(concat('scripts.js'))
+	.pipe(gulp.dest('js'))
+	.pipe(rename('scripts.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('js'))
 });
 
 // gulp.task('img', function() {
- 
+	
 //   gulp.src('img/src/*.{png,jpg,gif}')
 
 //  	.pipe(plumber(plumberErrorHandler))
- 
+
 //     .pipe(imagemin({
- 
+	
 //       optimizationLevel: 7,
- 
+
 //       progressive: true
- 
+
 //     }))
- 
+
 //     .pipe(gulp.dest('img'))
- 
+
 // });
 
 gulp.task('default', ['sass', 'scripts']); // Default Gulp tasks

@@ -1,15 +1,13 @@
-var mobileMenu = function() {
-    
-    $(document).on("click", ".nd-site-header__nav-trigger", function(){
-        $(".menu").toggleClass("nav--mobile");
+function mobileMenu(e) {
+    $(".menu").toggleClass("nav--mobile");
         $(this).toggleClass("close");
-    })
+        e.stopPropagation();
+        e.preventDefault();
+}
 
-    if($(".nd-site-header__nav-trigger").hasClass("close")) {
-        $(document).on("click", "body", function() {
-            $(this).trigger("click");
-        })
-    }
+function buttonClick(e) {
+    $(".nd-site-header__nav-trigger").trigger("click");
+    e.stopPropagation();
 }
 
 var main = function() {
@@ -23,9 +21,9 @@ var main = function() {
      //   }
     //});
 
-    var viewport = $(window).width();
 
-	if (Modernizr.touch) {
+
+    if (Modernizr.touch) {
         // handle the adding of hover class when clicked
         $("figure").click(function(e){
             if (!$(this).hasClass("hover")) {
@@ -42,7 +40,7 @@ var main = function() {
         });
     } else {
 
-	// handle the mouseenter functionality
+    // handle the mouseenter functionality
     $("figure").mouseenter(function(){
         $(this).addClass("hover");
     })
@@ -54,18 +52,19 @@ var main = function() {
 
 
     if (viewport < 750) {
-		$('.nd-site-footer__social').removeClass("six columns"); // change the Skeleton class
-		$('.nd-site-footer__contact').removeClass("six columns");
-	}
+        $('.nd-site-footer__social').removeClass("six columns"); // change the Skeleton class
+        $('.nd-site-footer__contact').removeClass("six columns");
+    }
 
+    if ($(".menu").hasClass("nav--mobile")) {
+        $(document).on("click", "body", buttonClick);
+    }
 }
 
 $(document).ready(function(){
-	main();
-    mobileMenu();
+    main();
 });
 
 $(window).resize(function() {
     main();
-    mobileMenu()
 });

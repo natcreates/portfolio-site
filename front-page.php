@@ -97,8 +97,8 @@
             <a href="http://www.barneysbubble.com">
             <h3>Barney's Bubble</h3>
               <p>Design to WordPress custom theme</p>
-              <button>See live</button>
-              <ul>
+              <span class="link-desc">See live</span>
+              <ul class="nd-site-project__skill-list">
                 <li class="skill-tag">HTML5</li>
                 <li class="skill-tag">CSS3</li>
                 <li class="skill-tag">Illustrator</li>
@@ -120,7 +120,7 @@
             <a href="https://natcreates.github.io/vanilla-to-do/#">
             <h3>Drag and Drop Eisenhower grid</h3>
               <p>An experiment in vanilla JS</p>
-              <button>See live</button>
+              <span class="link-desc">See live</span>
               <ul>
                 <li class="skill-tag">HTML5</li>
                 <li class="skill-tag">JavaScript</li>
@@ -142,7 +142,7 @@
             <a href="<?php echo get_template_directory_uri(); ?>/files/about.html">
             <h3>Jenny Stark: portfolio</h3>
               <p>Responsive design and build</p>
-              <button>See prototype</button>
+              <span class="link-desc">See prototype</span>
               <ul>
                 <li class="skill-tag">HTML5</li>
                 <li class="skill-tag">CSS3</li>
@@ -164,7 +164,7 @@
             <a href="http://www.nataliejdixon.com">
             <h3>Portfolio Site</h3>
               <p>Web Design to custom WordPress theme</p>
-              <button>You're looking at it.</button>
+              <span class="link-desc">You're looking at it.</span>
               <ul>
                 <li class="skill-tag">Design</li>
                 <li class="skill-tag">CSS3</li>
